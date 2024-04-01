@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@test/esbuild": ["libs/esbuild/src/index.ts"],
+      "@test/react-lib": ["libs/react-lib/src/index.ts"],
+      "@test/swc": ["libs/swc/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

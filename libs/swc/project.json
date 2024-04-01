@@ -1,0 +1,19 @@
+{
+  "name": "swc",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/swc/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/swc",
+        "main": "libs/swc/src/index.ts",
+        "tsConfig": "libs/swc/tsconfig.lib.json",
+        "assets": ["libs/swc/*.md"]
+      }
+    }
+  }
+}
